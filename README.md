@@ -21,49 +21,6 @@ Features
 
 🧩 Modular, production-style architecture
 
-Architecture Overview
-PDF Document
-
-     ↓
-     
-Text Extraction (PyMuPDF)
-
-     ↓
-     
-Text Chunking (LangChain)
-
-     ↓
-     
-Embeddings (Sentence Transformers)
-
-     ↓
-     
-FAISS Vector Store
-
-     ↓
-     
-User Query
-
-     ↓
-     
-Query Embedding
-
-     ↓
-     
-Top-K Semantic Retrieval
-
-     ↓
-     
-Context + Question
-
-     ↓
-     
-Local LLM (Ollama)
-
-     ↓
-     
-Final Answer
-
 
 This approach:
 
@@ -76,4 +33,5 @@ Scales to large documents
 Run the Project
 cd backend
 python test_rag.py
+
 
