@@ -23,34 +23,47 @@ Features
 
 Architecture Overview
 PDF Document
+
      ↓
+     
 Text Extraction (PyMuPDF)
+
      ↓
+     
 Text Chunking (LangChain)
+
      ↓
+     
 Embeddings (Sentence Transformers)
+
      ↓
+     
 FAISS Vector Store
+
      ↓
+     
 User Query
+
      ↓
+     
 Query Embedding
+
      ↓
+     
 Top-K Semantic Retrieval
+
      ↓
+     
 Context + Question
+
      ↓
+     
 Local LLM (Ollama)
+
      ↓
+     
 Final Answer
 
-What is RAG?
-
-Retrieval-Augmented Generation (RAG) combines:
-
-Retrieval: Fetching relevant document chunks using embeddings
-
-Generation: Producing answers using an LLM grounded in retrieved context
 
 This approach:
 
@@ -63,3 +76,4 @@ Scales to large documents
 Run the Project
 cd backend
 python test_rag.py
+
