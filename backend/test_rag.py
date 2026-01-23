@@ -1,9 +1,13 @@
 from rag_pipeline import RAGPipeline
 
 rag = RAGPipeline()
+
+# Ingest sample document
 rag.ingest_document("data/sample.pdf")
 
+# Ask question
 query = "What is this document about?"
-context = rag.answer(query)
+answer = rag.answer(query)
 
-print(context)
+print("\nAnswer:")
+print(answer)
