@@ -1,8 +1,9 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
+
 def chunk_text(text: str, chunk_size: int = 500, chunk_overlap: int = 50):
     """
-    Splits text into overlapping chunks to fit LLM context windows.
+    Split text into overlapping chunks.
     """
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,

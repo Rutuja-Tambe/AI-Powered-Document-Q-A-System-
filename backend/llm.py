@@ -1,13 +1,25 @@
 import subprocess
 
+# Small model for low-RAM systems
+MODEL_NAME = "tinyllama:latest"
+
+
 def generate_answer(prompt: str) -> str:
     """
-    Generates answer using a local LLM via Ollama.
+    Generate answer using local Ollama LLM.
+    Handles Windows stdout/stderr issues safely.
     """
     result = subprocess.run(
-        ["ollama", "run", "mistral"],
+        ["ollama", "run", MODEL_NAME],
         input=prompt,
         text=True,
+        encoding="utf-8",
+        errors="ignore",
         capture_output=True
     )
-    return result.stdout.strip()
+
+    output = result.stdout.strip()
+    if not output:
+        output = result.stderr.strip()
+
+    return output

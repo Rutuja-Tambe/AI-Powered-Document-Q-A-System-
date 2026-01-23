@@ -3,3 +3,5 @@ langchain
 sentence-transformers
 faiss-cpu
 numpy
+protobuf==4.25.3
+transformers
