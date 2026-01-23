@@ -5,21 +5,21 @@ The system retrieves relevant document context using semantic search and generat
 
 Features
 
-📑 PDF document ingestion
+1. PDF document ingestion
 
-✂️ Intelligent text chunking with overlap
+2. Intelligent text chunking with overlap
 
-🔢 Semantic embeddings using Hugging Face
+3. Semantic embeddings using Hugging Face
 
-⚡ Fast similarity search with FAISS
+4. Fast similarity search with FAISS
 
-🧠 Retrieval-Augmented Generation (RAG)
+5. Retrieval-Augmented Generation (RAG)
 
-💬 Local LLM answer generation (no paid APIs)
+6. Local LLM answer generation (no paid APIs)
 
-🔐 Grounded answers with reduced hallucination
+7. Grounded answers with reduced hallucination
 
-🧩 Modular, production-style architecture
+8. Modular, production-style architecture
 
 
 This approach:
@@ -33,5 +33,6 @@ Scales to large documents
 Run the Project
 cd backend
 python test_rag.py
+
 
 
